@@ -20,7 +20,7 @@ Welcome to my official GitHub repository for the **CodeVedX Web Development Virt
 
 ## 📌 Projects Checklist
 
-- [✅ ] **Task 1: Personal Portfolio**
+- [ ] **Task 1: Personal Portfolio**
 - [ ] **Task 2: Landing Page**
 - [ ] **Task 3: Interactive Calculator**
 
