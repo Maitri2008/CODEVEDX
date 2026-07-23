@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FolioByMaitri | Creative Developer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- =========================================================
+       CUSTOM CURSOR & GLOW EFFECT (INTERACTIVE VISUAL)
+  ========================================================= -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-glow"></div>
+
+  <!-- =========================================================
+       BACKGROUND CANVAS FOR FLOATING PARTICLES
+  ========================================================= -->
+  <canvas id="particleCanvas"></canvas>
+
+  <!-- =========================================================
+       TOP WAVE GRAPHIC / SVG DECORATION
+  ========================================================= -->
+  <div class="top-curve">
+    <svg viewBox="0 0 1440 320" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+      <path fill="#0284c7" opacity="0.4" d="M0,160L80,176C160,192,320,224,480,213.3C640,203,800,149,960,138.7C1120,128,1280,160,1360,176L1440,192L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+      <path fill="#38bdf8" opacity="0.25" d="M0,96L80,122.7C160,149,320,203,480,208C640,213,800,171,960,165.3C1120,160,1280,192,1360,208L1440,224L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
+  </div>
+
+  <!-- =========================================================
+       HEADER & NAVIGATION BAR
+  ========================================================= -->
+  <header>
+      <nav>
+          <!-- SUB-SECTION: BRAND LOGO -->
+          <div class="logo-container">
+              <div class="tech-ring"></div>
+              <div class="logo-core">
+                  <span class="m-badge">M</span>
+                  <span class="logo-text">AITRI</span>
+              </div>
+          </div>
+
+          <!-- SUB-SECTION: NAV LINKS -->
+          <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+              <li><a href="#projects">Projects</a></li>
+              <li><a href="#resume">Experience</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </header>
+
+  <!-- =========================================================
+       HERO SECTION (MAIN INTRO)
+  ========================================================= -->
+  <section class="hero scroll-reveal">
+      <!-- SUB-SECTION: HERO TEXT CONTENT -->
+      <div class="hero-content">
+          <p class="greeting">Hi, my name is</p>
+          <h1 class="name">Maitri.</h1>
+          <h2 class="role">BCA Student | Developer | Creative Designer</h2>
+          
+          <p class="bio">
+              Passionate <strong>BCA Student</strong> at IITM (GGSIPU) with a solid foundation in 
+              <span class="highlight">C, C++, JavaScript & Web Development</span>. Experienced as a 
+              <span class="highlight">Teaching Assistant at BHS Institute</span>, blending strong technical logic with 
+              professional <span class="highlight">Video Editing & Graphic Design</span> skills to build creative digital solutions.
+          </p>
+
+          <!-- SUB-SECTION: HERO CALL-TO-ACTION BUTTONS -->
+          <div class="hero-btns">
+              <a href="#projects" class="btn btn-glow">View My Work</a>
+              <a href="#contact" class="btn btn-outline">Contact Me</a>
+          </div>
+      </div>
+
+      <!-- SUB-SECTION: HERO AVATAR / PROFILE PHOTO -->
+      <div class="hero-image tilt-card">
+        <img src="Images/profile.jpg" alt="Maitri">
+      </div>
+  </section>
+
+  <!-- =========================================================
+       ABOUT ME SECTION
+  ========================================================= -->
+  <section id="about" class="about-section scroll-reveal">
+    <h2 class="section-title">About Me</h2>
+
+    <div class="about-container">
+      <!-- SUB-SECTION: ABOUT TEXT -->
+      <div class="about-text">
+        <p>
+          I am a developer and designer with a passion for turning complex logic into sleek, intuitive visual experiences. Currently pursuing my <strong>BCA at IITM (GGSIPU)</strong> with an <strong>8.86 CGPA</strong>, I bridge the gap between structured backend logic and modern frontend design.
+        </p>
+        <p>
+          From writing core algorithms in <span class="highlight">C, C++, and Python</span> to crafting engaging user interfaces and visual media, I love creating digital products that look great and perform seamlessly. As a <strong>Teaching Assistant at BHS Institute</strong>, I also enjoy breaking down complex technical concepts into easy-to-understand solutions.
+        </p>
+      </div>
+
+      <!-- SUB-SECTION: STATS / HIGHLIGHT CARDS -->
+      <div class="about-cards">
+        <div class="card tilt-card">
+          <h3>8.86</h3>
+          <p>Current CGPA (BCA)</p>
+        </div>
+        <div class="card tilt-card">
+          <h3>Logic + Design</h3>
+          <p>Coding & Creative Skills</p>
+        </div>
+        <div class="card tilt-card">
+          <h3>Teaching</h3>
+          <p>Assistant at BHS Institute</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       SKILLS & EXPERTISE SECTION
+  ========================================================= -->
+  <section id="skills" class="skills-section scroll-reveal">
+    <h2 class="section-title">Skills & Expertise</h2>
+
+    <div class="skills-grid">
+      <!-- SUB-SECTION: PROGRAMMING SKILLS -->
+      <div class="skill-card tilt-card">
+        <div class="skill-icon">⚡</div>
+        <h3>Programming & Core</h3>
+        <div class="skill-tags">
+          <span class="tag">C</span>
+          <span class="tag">C++</span>
+          <span class="tag">Python</span>
+          <span class="tag">Data Structures (DSA)</span>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: WEB & DATABASE SKILLS -->
+      <div class="skill-card tilt-card">
+        <div class="skill-icon">🌐</div>
+        <h3>Web & Databases</h3>
+        <div class="skill-tags">
+          <span class="tag">HTML5</span>
+          <span class="tag">CSS3</span>
+          <span class="tag">JavaScript</span>
+          <span class="tag">PHP</span>
+          <span class="tag">SQL / MySQL</span>
+          <span class="tag">DBMS</span>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: CREATIVE & OFFICE TOOLS -->
+      <div class="skill-card tilt-card">
+        <div class="skill-icon">🎨</div>
+        <h3>Creative & Tools</h3>
+        <div class="skill-tags">
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Video Editing</span>
+          <span class="tag">Advanced Excel</span>
+          <span class="tag">MS Office</span>
+          <span class="tag">MS Word</span>
+          <span class="tag">MS Powerpoint</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       FEATURED PROJECTS SECTION (INTERACTIVE MODALS)
+  ========================================================= -->
+  <section id="projects" class="projects-section scroll-reveal">
+    <h2 class="section-title">Featured Projects</h2>
+    
+    <div class="projects-grid">
+      <!-- PROJECT ITEM 1 -->
+      <div class="project-card tilt-card" onclick="openModal('project1')">
+        <div class="project-badge">Programming</div>
+        <h3>Console Tic-Tac-Toe Game</h3>
+        <p>An interactive C/C++ console game featuring automated win-checking algorithms and optimized grid memory logic.</p>
+        <div class="skill-tags">
+          <span class="tag">C++</span>
+          <span class="tag">C</span>
+          <span class="tag">Algorithms</span>
+        </div>
+        <button class="project-btn">Explore Details ↗</button>
+      </div>
+
+      <!-- PROJECT ITEM 2 -->
+      <div class="project-card tilt-card" onclick="openModal('project2')">
+        <div class="project-badge">Creative Media</div>
+        <h3>Social Media Video & Reels</h3>
+        <p>High-engagement short-form video reels incorporating dynamic transitions, visual timing, beat sync, and color grading.</p>
+        <div class="skill-tags">
+          <span class="tag">Video Editing</span>
+          <span class="tag">Motion Graphics</span>
+          <span class="tag">Visuals</span>
+        </div>
+        <button class="project-btn">Explore Details ↗</button>
+      </div>
+
+      <!-- PROJECT ITEM 3 -->
+      <div class="project-card tilt-card" onclick="openModal('project3')">
+        <div class="project-badge">Design & Branding</div>
+        <h3>Brand Graphic Banners & Ads</h3>
+        <p>Custom-designed digital advertisements, promo banners, and marketing posters tailored for institutional campaigns.</p>
+        <div class="skill-tags">
+          <span class="tag">Graphic Design</span>
+          <span class="tag">Branding</span>
+          <span class="tag">Photoshop / Canva</span>
+        </div>
+        <button class="project-btn">Explore Details ↗</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- SUB-SECTION: INTERACTIVE POPUP MODALS FOR PROJECTS -->
+  <div id="projectModal" class="modal">
+    <div class="modal-content">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div id="modalBody"></div>
+    </div>
+  </div>
+
+  <!-- =========================================================
+       EXPERIENCE & CERTIFICATIONS SECTION (UPDATED)
+  ========================================================= -->
+  <section id="resume" class="resume-section scroll-reveal">
+    <h2 class="section-title">Experience & Certifications</h2>
+
+    <!-- SUB-SECTION: WORK EXPERIENCE TIMELINE -->
+    <h3 class="subsection-title">Work Experience</h3>
+    <div class="experience-timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="timeline-content">
+          <span class="timeline-date">Jan 2026 - Present</span>
+          <h3>Teaching Assistant</h3>
+          <span class="timeline-org">BHS Institute</span>
+          <p>Teaching students from Class 1 to 8, improving classroom management, technical explanation, and communication.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB-SECTION: CERTIFICATIONS GRID -->
+    <h3 class="subsection-title">Certifications & Achievements</h3>
+    <div class="certifications-grid">
+      <!-- CERTIFICATE 1 -->
+      <div class="cert-card tilt-card">
+        <div class="cert-icon">🏆</div>
+        <h4>Nesternship Learning Certification</h4>
+        <p>Successfully completed hands-on corporate virtual nesternship learning experience.</p>
+      </div>
+
+      <!-- CERTIFICATE 2 -->
+      <div class="cert-card tilt-card">
+        <div class="cert-icon">💻</div>
+        <h4>C++ & Python Programming</h4>
+        <p>Mastered core data structures, OOPs, arrays, and problem-solving through coding exercises.</p>
+      </div>
+
+      <!-- CERTIFICATE 3 -->
+      <div class="cert-card tilt-card">
+        <div class="cert-icon">🌐</div>
+        <h4>International Conference Paper / Participation</h4>
+        <p>Autonomous Data Driven System: AI, ML & IoT for Next Generation Computing.</p>
+      </div>
+
+      <!-- CERTIFICATE 4 -->
+      <div class="cert-card tilt-card">
+        <div class="cert-icon">⭐</div>
+        <h4>Leadership Certificate</h4>
+        <p>Issued by Synonym Solutions for leadership and team management.</p>
+      </div>
+    </div>
+
+    <!-- SUB-SECTION: RESUME DOWNLOAD ACTION -->
+    <div class="resume-download-box">
+      <p>Want a quick look at my formal qualifications?</p>
+      <a href="Resume.pdf" download class="btn btn-glow">Download Full Resume 📄</a>
+    </div>
+  </section>
+
+  <!-- =========================================================
+       CONTACT SECTION & FOOTER
+  ========================================================= -->
+  <section id="contact" class="contact-section scroll-reveal">
+    <h2 class="section-title">Get In Touch</h2>
+    <p class="contact-subtitle">
+      Whether you have a question, want to collaborate on a design/web project, or just want to connect—my inbox is always open!
+    </p>
+
+    <!-- SUB-SECTION: CONTACT INFORMATION CARDS -->
+    <div class="contact-container">
+      <div class="contact-info">
+        <div class="contact-card tilt-card">
+          <div class="contact-icon">📧</div>
+          <div>
+            <h4>Email</h4>
+            <a href="mailto:anvi82228@gmail.com">anvi82228@gmail.com</a>
+          </div>
+        </div>
+
+        <div class="contact-card tilt-card">
+          <div class="contact-icon">📞</div>
+          <div>
+            <h4>Phone</h4>
+            <a href="tel:+919211033588">+91 9211033588</a>
+          </div>
+        </div>
+
+        <div class="contact-card tilt-card">
+          <div class="contact-icon">📍</div>
+          <div>
+            <h4>Location</h4>
+            <p>Delhi, India</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- SUB-SECTION: EMAIL CALL TO ACTION -->
+      <div class="contact-action">
+        <a href="mailto:anvi82228@gmail.com?subject=Hello%20Maitri!%20From%20Your%20Portfolio" class="btn btn-glow btn-large">Say Hello 👋</a>
+      </div>
+    </div>
+
+    <!-- SUB-SECTION: FOOTER COPYRIGHT -->
+    <footer>
+      <p>Designed & Built by <span>Maitri</span> © 2026</p>
+    </footer>
+  </section>
+
+  <!-- SCRIPT LINK -->
+  <script src="script.js"></script>
+</body>
+</html>
